@@ -12,9 +12,9 @@ import { Trace } from "@aiteq/trace";
 class User {
   constructor(public name: string) { }
   
-	public getName(): string {
-		return this.name;
-	}
+  public getName(): string {
+    return this.name;
+  }
   
   public toString(): string {
     return this.getName();
@@ -42,9 +42,9 @@ class User {
   constructor(public name: string) { }
   
   @Trace()
-	public getName(): string {
-		return this.name;
-	}
+  public getName(): string {
+    return this.name;
+  }
   
   public toString(): string {
     return this.getName();
