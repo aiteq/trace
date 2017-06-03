@@ -1,5 +1,13 @@
 # trace
+[![Build Status](https://travis-ci.org/aiteq/trace.svg?branch=master)](https://travis-ci.org/aiteq/trace)
+
 TypeScript decorator to trace method calls using https://github.com/visionmedia/debug
+
+## Installation
+
+```bash
+$ npm install @aiteq/trace
+```
 
 ## Usage
 The `Trace` decorator can be used for classes as well as for methods.
@@ -64,6 +72,6 @@ Honza
 
 ### Notes
 - While [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) are still experimental, you must set `experimentalDecorators` to `true` in your `tsconfig.json`.
-- The output is controlled by the `DEBUG` environment variable. All tracing records are prefixed with the `TRACE` string. So for enabling the tracing set the DEBUG variable to e.g. `TRACE` or `*`. See `debug`'s [doc](https://github.com/visionmedia/debug) for details.
+- The output is controlled by the `DEBUG` environment variable. All tracing records are prefixed with the `TRACE` string. So for enabling the tracing set the `DEBUG` variable to e.g. `TRACE` or `*`. See `debug`'s [doc](https://github.com/visionmedia/debug) for details.
 - The output will be colorized by `debug`.
 - Tracing doesn't work for constructors.
