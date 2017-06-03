@@ -63,6 +63,7 @@ Honza
 ```
 
 ### Notes
-The ouput will be colorized by `debug`.
-
-Tracing doesn't work for constructor.
+- While [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) are still experimental, you must set `experimentalDecorators` to `true` in your `tsconfig.json`.
+- The output is controlled by the `DEBUG` environment variable. All tracing records are prefixed with the `TRACE` string. So for enabling the tracing set the DEBUG variable to e.g. `TRACE` or `*`. See `debug`'s [doc](https://github.com/visionmedia/debug) for details.
+- The output will be colorized by `debug`.
+- Tracing doesn't work for constructor.

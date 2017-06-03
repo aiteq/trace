@@ -1,0 +1,38 @@
+{
+  "name": "@aiteq/trace",
+  "version": "1.0.0",
+  "description": "TypeScript decorator to trace method calls",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "compile": "tsc -p .",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aiteq/trace.git"
+  },
+  "keywords": [
+    "typescript",
+    "debug",
+    "trace"
+  ],
+  "author": "Aiteq Reloaded, s.r.o.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aiteq/trace/issues"
+  },
+  "homepage": "https://github.com/aiteq/trace#readme",
+  "devDependencies": {
+    "@types/debug": "0.0.29",
+    "@types/node": "^7.0.23",
+    "typescript": "^2.3.2"
+  },
+  "dependencies": {
+    "debug": "^2.6.8"
+  },
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ]
+}
